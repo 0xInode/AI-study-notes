@@ -1,6 +1,36 @@
-이것은 《핸즈온 머신러닝》 2판의 Chapter 2 내용을 따라가며 아래 단계를 실습한 내용입니다:
+이 장에서는 실제 부동산 회사에 새로 입사한 데이터 사이언티스트라고 가정하고,  
+머신러닝 프로젝트의 전 과정을 처음부터 끝까지 실습
 
-# Get the data
+# 주요 단계
+
+- Look at the big picture.(전체적인 그림 파악)
+- Get the data.(데이터 수집)
+- Discover and visualize the data to gain insights.(데이터를 탐색하고 시각화하여 인사이트 얻기)
+- Prepare the data for Machine Learning algorithms.(머신러닝 알고리즘에 맞게 데이터 준비)
+- Select a model and train it.(모델을 선택하고 훈련)
+- Fine-tune your model.(모델을 세밀하게 조정)
+- Present your solution.(솔루션 발표)
+- Launch, monitor, and maintain your system.(시스템 배포하고, 모니터링하며, 유지 관리)
+
+## 주요 공개 데이터 저장소
+UC Irvine Machine Learning Repository Kaggle Datasets
+Amazon AWS Public Datasets
+
+## 메타 포털 (공개 데이터 저장소를 모아둔 사이트)
+http://dataportals.org/
+http://opendatamonitor.eu/
+http://quandl.com/
+
+## 그 외 데이터 목록이 있는 페이지
+위키피디아의 머신러닝 데이터셋 목록
+Quora.com의 관련 질문
+Reddit의 r/datasets 서브레딧
+
+<br>
+
+# 실습
+
+## Get the data
 
 1. **작업환경 설정**
    - 가상환경 생성 및 필수 패키지 설치 (`jupyter`, `pandas`, `matplotlib`, `scikit-learn` 등)
@@ -26,7 +56,7 @@
   
 
 
-# Discover and visualize the data to gain insights
+## Discover and visualize the data to gain insights
 
 1. **훈련 세트 복사**
    - `strat_train_set`을 복사하여 탐색용 `housing` 데이터프레임 생성
@@ -51,104 +81,73 @@
    - `rooms_per_household`, `bedrooms_per_room`, `population_per_household` 등 새 특성 생성
    - 새 특성들과 주택 가격 간 상관계수 확인
   
-# Prepare the Data for Machine Learning Algorithms
+## Prepare the Data for Machine Learning Algorithms
 
 1. **결측치 처리**
-
    - total_bedrooms 속성의 결측값 처리
    - 행 삭제: dropna()
    - 열 삭제: drop()
    - 중앙값으로 대체: fillna() 또는 Imputer(strategy="median")
 
 2. **범주형 특성 처리**
-
    - LabelEncoder로 텍스트 → 정수 인코딩
    - OneHotEncoder 또는 LabelBinarizer로 원-핫 인코딩
 
 3. **사용자 정의 변환기**
-
    - CombinedAttributesAdder 클래스로 파생 특성 자동 생성
-
    - add_bedrooms_per_room 하이퍼파라미터로 조정 가능
 
 4. **특성 스케일링**
-
    - MinMaxScaler: 정규화 (0~1)
-
    - StandardScaler: 표준화 (평균 0, 분산 1)
 
 5. **파이프라인 구성**
-
    - Pipeline으로 변환 순서 정의
-
    - FeatureUnion으로 수치형/범주형 변환 결합
-
    - DataFrameSelector 사용자 정의 변환기로 Pandas → NumPy 변환
-
-# Select a Model and Train It
+  
+## Select a Model and Train It
 
 1. **모델 학습**
-
    - LinearRegression: RMSE 약 68,628 → 과소적합
-
    - DecisionTreeRegressor: 훈련셋 RMSE = 0 → 심각한 과적합
-
    - RandomForestRegressor: 훈련셋 RMSE 약 22,542 → 가장 우수한 성능
 
 2. **교차 검증**
-
    - cross_val_score로 10-겹 교차 검증
-
    - 평균 RMSE와 표준편차로 모델의 일반화 능력 평가
-
    - 결정트리는 과적합으로 인해 평균 성능이 낮음
 
-# Fine-Tune Your Model
+## Fine-Tune Your Model
 
 1. **Grid Search**
-
    - GridSearchCV로 n_estimators, max_features 조합 탐색
-
    - 총 18개 조합 × 5겹 = 90번 학습
-
    - 최적 조합: n_estimators=30, max_features=6
-
    - RMSE 약 49,959
 
 2. **특성 중요도 분석**
-
    - feature_importances_로 주요 특성 파악
-
    - median_income, bedrooms_per_room, rooms_per_household 중요
-
    - 일부 ocean_proximity 카테고리는 거의 기여하지 않음
 
-# Present Your Solution
+## Present Your Solution
 
 1. **최종 테스트셋 평가**
-
    - full_pipeline.transform()을 사용해 변환
-
    - 테스트셋에서 RMSE 약 48,209
-
    - 검증셋과 성능 유사함 → 과적합 심하지 않음
-
    - 하이퍼파라미터 조정 후 테스트셋을 이용해 성능 확정
 
-# Launch, Monitor, and Maintain Your System
+## Launch, Monitor, and Maintain Your System
 
 1. **운영 준비 및 배포**
-
    - 실제 데이터와 연결, 테스트 코드 작성
-
    - 실시간 성능 모니터링 설정
-
    - 입력 데이터 품질 모니터링 중요
 
 2. **주기적 재학습 및 버전 관리**
-
    - 모델을 주기적으로 재학습해 데이터 드리프트 대응
-
    - 온라인 학습의 경우 상태 스냅샷 저장 필요
 
 ## 도출된 인사이트
