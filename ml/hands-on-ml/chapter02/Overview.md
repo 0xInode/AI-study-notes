@@ -4,14 +4,14 @@
 
 주요 단계
 
-1. 전체적인 그림을 파악한다.
-2. 데이터를 수집한다.
-3. 데이터를 탐색하고 시각화하여 인사이트를 얻는다.
-4. 머신러닝 알고리즘에 맞게 데이터를 준비한다.
-5. 모델을 선택하고 훈련시킨다.
-6. 모델을 세밀하게 조정(fine-tune)한다.
-7. 솔루션을 발표한다.
-8. 시스템을 배포하고, 모니터링하며, 유지 관리한다.
+1. Look at the big picture.(전체적인 그림 파악)
+2. Get the data.(데이터 수집)
+3. Discover and visualize the data to gain insights.(데이터를 탐색하고 시각화하여 인사이트 얻기)
+4. Prepare the data for Machine Learning algorithms.(머신러닝 알고리즘에 맞게 데이터 준비)
+5. Select a model and train it.(모델을 선택하고 훈련)
+6. Fine-tune your model.(모델을 세밀하게 조정)
+7. Present your solution.(솔루션 발표)
+8. Launch, monitor, and maintain your system.(시스템 배포하고, 모니터링하며, 유지 관리)
 
 🔹 주요 공개 데이터 저장소  
 UC Irvine Machine Learning Repository
