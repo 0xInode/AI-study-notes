@@ -12,7 +12,7 @@
 🔄 예시 코드 (로컬에서 불러오기)
 import joblib
 
-X_train = joblib.load("data/housing_prepared.pkl")
-y_train = joblib.load("data/housing_labels.pkl")
-model = joblib.load("data/final_model.pkl")
-pipeline = joblib.load("data/full_pipeline.pkl")
+X_train = joblib.load("data/housing_prepared.pkl")  
+y_train = joblib.load("data/housing_labels.pkl")  
+model = joblib.load("data/final_model.pkl")  
+pipeline = joblib.load("data/full_pipeline.pkl")  
