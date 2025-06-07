@@ -13,23 +13,17 @@
 7. 솔루션을 발표한다.
 8. 시스템을 배포하고, 모니터링하며, 유지 관리한다.
 
-🔹 주요 공개 데이터 저장소
+🔹 주요 공개 데이터 저장소  
 UC Irvine Machine Learning Repository
+Kaggle Datasets  
+Amazon AWS Public Datasets  
 
-Kaggle Datasets
+🔹 메타 포털 (공개 데이터 저장소를 모아둔 사이트)  
+http://dataportals.org/  
+http://opendatamonitor.eu/  
+http://quandl.com/  
 
-Amazon AWS Public Datasets
-
-🔹 메타 포털 (공개 데이터 저장소를 모아둔 사이트)
-http://dataportals.org/
-
-http://opendatamonitor.eu/
-
-http://quandl.com/
-
-🔹 그 외 데이터 목록이 있는 페이지
-위키피디아의 머신러닝 데이터셋 목록
-
-Quora.com의 관련 질문
-
-Reddit의 r/datasets 서브레딧
+🔹 그 외 데이터 목록이 있는 페이지  
+위키피디아의 머신러닝 데이터셋 목록  
+Quora.com의 관련 질문  
+Reddit의 r/datasets 서브레딧  
