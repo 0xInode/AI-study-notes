@@ -81,3 +81,8 @@ confusion_matrix()로 클래스별 오차 확인
 | 알고리즘  | SGD, SVM, KNN, RandomForest, LogisticRegression |
 | 평가 지표 | Accuracy, Precision, Recall, F1, ROC-AUC        |
 | 실습 핵심 | 전처리, 시각화, 평가, 모델 튜닝                             |
+
+
+
+* chapter02와 마찬가지로 기능별로 분류하려고 여러 노트북으로 자르려고 했으나
+  pickle이 너무 많이 사용되어... 이번에는 하나로 만들었습니다!
