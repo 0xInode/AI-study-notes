@@ -5,7 +5,7 @@ MNIST: 손글씨 숫자 이미지 데이터셋 (28x28, 0~9 숫자)
 데이터 로딩: fetch_openml()을 사용하여 X (이미지 데이터), y (레이블) 분리  
 시각화: imshow()로 숫자 이미지 출력
 
-✅ 2. 이진 분류 (Binary Classification)  
+✅ 2. 이진 분류기(Binary Classifier) 훈련 
 목표: 숫자 5를 맞추는 분류기 훈련 (y_train_5 = (y_train == 5))  
 사용 모델: SGDClassifier  
 평가 방법  
@@ -13,7 +13,7 @@ MNIST: 손글씨 숫자 이미지 데이터셋 (28x28, 0~9 숫자)
  - 정확도, 정밀도(Precision), 재현율(Recall), F1 Score 계산  
  - 임의 분류기(Never5Classifier)와 비교  
 
-✅ 3. 정밀도/재현율 트레이드오프  
+✅ 3. Performance Measures
 Threshold 조정을 통해 Precision/Recall 간의 균형을 조정  
 precision_recall_curve() 및 시각화로 이해  
 원하는 정밀도(예: 90%)에 맞는 threshold 선택  
