@@ -131,25 +131,6 @@ Reddit의 r/datasets 서브레딧
    - median_income, bedrooms_per_room, rooms_per_household 중요
    - 일부 ocean_proximity 카테고리는 거의 기여하지 않음
 
-## Present Your Solution
-
-1. **최종 테스트셋 평가**
-   - full_pipeline.transform()을 사용해 변환
-   - 테스트셋에서 RMSE 약 48,209
-   - 검증셋과 성능 유사함 → 과적합 심하지 않음
-   - 하이퍼파라미터 조정 후 테스트셋을 이용해 성능 확정
-
-## Launch, Monitor, and Maintain Your System
-
-1. **운영 준비 및 배포**
-   - 실제 데이터와 연결, 테스트 코드 작성
-   - 실시간 성능 모니터링 설정
-   - 입력 데이터 품질 모니터링 중요
-
-2. **주기적 재학습 및 버전 관리**
-   - 모델을 주기적으로 재학습해 데이터 드리프트 대응
-   - 온라인 학습의 경우 상태 스냅샷 저장 필요
-
 ## 도출된 인사이트
 
 - `median_income`, `bedrooms_per_room`, `rooms_per_household` 는 `median_house_value` 예측에 가장 **중요한 특성**으로 나타남  
