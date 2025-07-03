@@ -1,2 +1,3 @@
 # AI-study-notes
-대학원 준비를 위한 수학 및 머신러닝 정리
+- ML: Hands-on-ML 위주 정리
+- 수학: Introduction to Linear Algebra 위주 정리(Gilbert Strang)
