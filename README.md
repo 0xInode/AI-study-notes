@@ -37,7 +37,7 @@
 ## 📬 문의 및 연락
 
 학습 관련 피드백이나 의견은 언제든 환영입니다.  
-📧 Email: b4e5ff@gmail.com
+📧 Email: 42heejin.kim@gmail.com
 🔗 GitHub: [github.com/0xInode](https://github.com/0xInode)
 
 감사합니다 🙇‍♂️
